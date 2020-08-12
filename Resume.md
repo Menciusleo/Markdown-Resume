@@ -1,62 +1,51 @@
  <center>
-     <h1>XXX</h1>
+     <h1>刘汉书</h1>
      <div>
          <span>
              <img src="assets/phone-solid.svg" width="18px">
-             180XXXXXXXX
+             13329760288
          </span>
          ·
          <span>
              <img src="assets/envelope-solid.svg" width="18px">
-             zhengyc101@163.com
+             tankliu1234@163.com
          </span>
-         ·
-         <span>
-             <img src="assets/github-brands.svg" width="18px">
-             <a href="https://github.com/CyC2018">CyC2018</a>
-         </span>
-         ·
-         <span>
-             <img src="assets/rss-solid.svg" width="18px">
-             <a href="#">My Blog</a>
-         </span>
-     </div>
- </center>
+
 
  ## <img src="assets/info-circle-solid.svg" width="30px"> 个人信息 
 
  - 男，1994 年出生
- - 求职意向：Java 研发工程师
- - 工作经验：0 年（校招可不填）
- - 期望薪资：0k（校招可不填）
+ - 求职意向：C++ 研发工程师
 
 ## <img src="assets/graduation-cap-solid.svg" width="30px"> 教育经历
 
-- 硕士，XXXX大学，计算机科学与技术专业，2016.9~2019.7
-- 学士，XXXX大学，软件工程专业，2012.9~2016.7
-- 绩点：***，年级前 100%
+- 学士，武汉大学，电子信息学院，电子信息工程专业，2012.9~2016.7
+- 硕士，南京大学，电子科学与工程学院，信号与信息处理专业，2018.9~2021.7
+    -南京大学立体成像技术实验室，研究方向：信号降噪
 - 通过了 CET4/6 英语等级考试
-
-## <img src="assets/briefcase-solid.svg" width="30px"> 工作经历
-
-- **XXXX 公司，XXXX 部门，XXXX 工程师，2010.1~2010.9**
-
-   负责 XXX
 
 ## <img src="assets/project-diagram-solid.svg" width="30px"> 项目经历
 
-- **XXXX 项目**
+- **梦幻西游藏宝阁角色数据的爬取**  2019.5
 
-  *使用到的技术*
+  python爬虫，藏宝阁是网易公司用于游戏角色交易的平台
 
-  使用一两句话描述项目的主要功能，然后介绍自己在项目中的角色，解决了什么问题，使用什么方式解决，比别人的方法相比有什么优势（尽量用数据来说明）。
+    具体工作：
+    1.多线程爬取所有服务器正在交易的角色信息。
+    2.基于单生产者多消费者模型，主线程遍历服务器列表，爬取所有需要爬取的URL，存入队列缓存。开启多个消费者线程，从队列中获取URL，爬取数据并解析。
+    3.从IP代理网站爬取代理IP，构建自己的IP池。所有的IP存入mysql数据库并周期性维护。
+    4.获取到包含角色数据的JSON文件，从中提取所需的数据，存入数据库。
+    5.JSON文件中部分角色数据做了加密处理，破解了加密数据。
 
-## <img src="assets/tools-solid.svg" width="30px"> 技能清单
+- **使用共享内存的方案，实现了一个IPC类，C++实现**  2019.9
 
-- ★★★ Java
-- ★★☆ C++、Python
-- ★★★ MySQL
-- ★★★ Redis
-- ★★☆ Spring
-- ★☆☆ RabbitMQ、ZooKeeper
-- ★★☆ JavaScript
+    具体工作：
+    1.基于共享内存方案实现IPC，可实现多进程间的单向传输。
+    2.构建了循环队列用于底层数据存储，利用自旋锁保证数据的安全读写，实现非阻塞。
+    3.构建了数据块的block类，读写操作都以block为最小单位。
+
+
+## <img src="assets/project-diagram-solid.svg" width="30px"> 获奖经历
+
+- 2019年华为杯全国研究生数学建模大赛二等奖
+
